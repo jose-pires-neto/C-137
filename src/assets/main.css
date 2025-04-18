@@ -1,0 +1,358 @@
+:root {
+    --portal-green: #00ff9d;
+    --portal-blue: #00b4ff;
+    --rick-hair: #a7cb1e;
+    --morty-yellow: #ffde00;
+    --schwifty-purple: #8e44ad;
+    --space-black: #1a1a2e;
+    --pink: #ff00ff;
+  }
+  
+  body {
+    font-family: 'Get Schwifty', 'Comic Sans MS', cursive;
+    background-color: var(--space-black);
+    color: white;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(0, 255, 157, 0.1) 0%, transparent 20%),
+      radial-gradient(circle at 90% 80%, rgba(0, 180, 255, 0.1) 0%, transparent 20%);
+    min-height: 100vh;
+  }
+  
+  @font-face {
+    font-family: 'Get Schwifty';
+    src: url('https://fonts.cdnfonts.com/css/get-schwifty') format('woff');
+  }
+  
+  /* Estilos para a Navbar */
+.navbar-custom {
+  padding: 0.8rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 15px var(--portal-blue);
+}
+
+/* Estilo para os links da navbar */
+.navbar-custom .nav-link {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  position: relative;
+  color: white !important;
+}
+
+.navbar-custom .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--portal-green);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-custom .nav-link:hover::after,
+.navbar-custom .nav-link.active-nav-link::after {
+  width: 80%;
+}
+
+.navbar-custom .nav-link:hover {
+  color: var(--portal-green) !important;
+}
+
+/* Botão toggler personalizado */
+.navbar-toggler {
+  padding: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px var(--portal-green);
+  outline: none;
+}
+
+/* Responsividade */
+@media (max-width: 991.98px) {
+  .navbar-custom {
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-custom .navbar-collapse {
+    padding: 1rem;
+    background-color: rgba(26, 26, 46, 0.95);
+    border-radius: 0 0 10px 10px;
+    border: 1px solid var(--portal-blue);
+    border-top: none;
+    margin-top: 0.5rem;
+  }
+  
+  .navbar-custom .nav-link {
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(0, 180, 255, 0.1);
+  }
+  
+  .navbar-custom .nav-link:hover {
+    background-color: rgba(0, 255, 157, 0.2);
+  }
+  
+  .navbar-custom .nav-link::after {
+    display: none;
+  }
+}
+
+
+  
+  /* Estilos para os cards */
+  .portal-card {
+    background: rgba(26, 26, 46, 0.8);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 
+      0 0 15px var(--portal-blue),
+      0 0 30px var(--portal-green);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .portal-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--portal-blue), var(--portal-green));
+    z-index: -1;
+    border-radius: 16px;
+    animation: portal-glow 3s linear infinite;
+  }
+  
+  @keyframes portal-glow {
+    0% { filter: blur(5px); opacity: 0.7; }
+    50% { filter: blur(7px); opacity: 1; }
+    100% { filter: blur(5px); opacity: 0.7; }
+  }
+  
+  .portal-card:hover {
+    transform: translateY(-10px) scale(1.02);
+  }
+
+
+
+  
+  /* estilos para o Botões Schwifty */
+  .btn-schwifty {
+    background: linear-gradient(45deg, var(--portal-green), var(--portal-blue));
+    border: none;
+    color: var(--space-black);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+  }
+  
+  .btn-schwifty:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--portal-green);
+    color: var(--space-black);
+  }
+
+
+  
+  /* Página de postagem */
+  .post-header {
+    position: relative;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(0,255,157,0.2), rgba(0,180,255,0.2));
+    border-radius: 15px;
+    margin-bottom: 2rem;
+  }
+  
+  .post-header h1 {
+    font-family: 'Get Schwifty';
+    color: var(--portal-green);
+    text-shadow: 0 0 10px var(--portal-blue);
+    font-size: 3rem;
+  }
+  
+  .comment-bubble {
+    background: rgba(142, 68, 173, 0.2);
+    border-left: 4px solid var(--schwifty-purple);
+    border-radius: 0 15px 15px 15px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .comment-bubble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%238e44ad"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>') no-repeat;
+    background-size: contain;
+  }
+
+
+
+  
+  /* Efeitos pra dar um tacham */
+  .dimension-jump {
+    animation: dimensionJump 5s infinite alternate;
+  }
+  
+  @keyframes dimensionJump {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+
+
+
+
+
+  /* Estilos para a paginação */
+.dimension-pagination .page-item .page-link {
+    background-color: var(--space-black);
+    color: var(--portal-green);
+    border: 1px solid var(--portal-blue);
+    margin: 0 5px;
+    transition: all 0.3s;
+  }
+  
+  .dimension-pagination .page-item.active .page-link {
+    background: linear-gradient(45deg, var(--portal-green), var(--portal-blue));
+    color: var(--space-black);
+    border: none;
+    box-shadow: 0 0 10px var(--portal-green);
+    transform: scale(1.1);
+  }
+  
+  .dimension-pagination .page-item.disabled .page-link {
+    color: #666;
+    border-color: #444;
+  }
+  
+  .dimension-pagination .page-item:not(.active):not(.disabled) .page-link:hover {
+    background-color: rgba(0, 255, 157, 0.1);
+    color: var(--portal-blue);
+    box-shadow: 0 0 5px var(--portal-green);
+  }
+
+
+
+  /* Estilos para a barra de pesquisa. Não altere por favor */
+.search-container {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    position: relative;
+  }
+  
+  .search-input-group {
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.3);
+    transition: all 0.3s ease;
+  }
+  
+  .search-input-group:hover {
+    box-shadow: 0 0 20px var(--portal-green);
+  }
+  
+  .search-prepend {
+    background-color: var(--space-black) !important;
+    border: 1px solid var(--portal-blue) !important;
+    border-right: none !important;
+    padding: 0 1.25rem;
+  }
+  
+  .search-prepend .bi {
+    color: var(--portal-green);
+    font-size: 1.2rem;
+  }
+  
+  .search-input {
+    background-color: var(--space-black) !important;
+    color: white !important;
+    border: 1px solid var(--portal-blue) !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+  }
+  
+  .search-input:focus {
+    box-shadow: none !important;
+    border-color: var(--portal-green) !important;
+    background-color: rgba(26, 26, 46, 0.9) !important;
+  }
+  
+  .clear-search-btn {
+    background-color: var(--space-black) !important;
+    border: 1px solid var(--portal-blue) !important;
+    border-left: none !important;
+    color: var(--portal-green) !important;
+    padding: 0 1.25rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .clear-search-btn:hover {
+    background-color: rgba(255, 0, 0, 0.2) !important;
+    color: #ff5555 !important;
+    border-color: #ff5555 !important;
+  }
+  
+  .clear-search-btn .bi {
+    font-size: 1.3rem;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .search-container {
+      margin-bottom: 2rem;
+      padding: 0 15px;
+    }
+    
+    .search-input {
+      font-size: 1rem;
+      padding: 0.6rem 1rem;
+    }
+    
+    .search-prepend, .clear-search-btn {
+      padding: 0 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .search-input::placeholder {
+      font-size: 0.9rem;
+    }
+    
+    .search-prepend .bi, .clear-search-btn .bi {
+      font-size: 1.1rem;
+    }
+  }
