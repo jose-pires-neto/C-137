@@ -1,8 +1,10 @@
 # 🚀 C-137 Blog - Portal Interdimensional Rick and Morty 
 
 <div align="center">
+  <a href="https://c-137-zeta.vercel.app/">
   <img src="https://github.com/user-attachments/assets/7f76f074-c468-46e4-9c33-b3b6e69d68c3" width="300" alt="Portal Rick and Morty">
   <br>
+  </a>
   <a href="https://c-137-zeta.vercel.app/">
     <img src="https://img.shields.io/badge/ACESSE%20O%20PORTAL-%2300B4FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Deploy na Vercel">
   </a>
@@ -31,7 +33,7 @@
 
 **1. Clone o repositório:**
 ```bash
-git clone https://github.com/seu-usuario/c-137-blog.git
+git clone https://github.com/jose-pires-neto/C-137.git
 ```
 
 **2. Entre na pasta do projeto:**
