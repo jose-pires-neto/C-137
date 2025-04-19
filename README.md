@@ -1,12 +1,36 @@
-# React + Vite
+# 🚀 C-137 Blog - Portal Interdimensional Rick and Morty 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7f76f074-c468-46e4-9c33-b3b6e69d68c3" width="300" alt="Portal Rick and Morty">
+  <br>
+  <a href="https://c-137-zeta.vercel.app/">
+    <img src="https://img.shields.io/badge/ACESSE%20O%20PORTAL-%2300B4FF?style=for-the-badge&logo=vercel&logoColor=white" alt="Deploy na Vercel">
+  </a>
+</div>
 
-Currently, two official plugins are available:
+## 🌌 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*"Wubba Lubba Dub Dub!"* - Este é um portal interdimensional que consome a API oficial de Rick and Morty para trazer informações sobre todos os personagens, locais e episódios do multiverso mais louco da TV.
 
-## Expanding the ESLint configuration
+🔹 **Tecnologias usadas**:  
+![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/-Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white)
+![Rick and Morty API](https://img.shields.io/badge/-Rick%20and%20Morty%20API-00B4FF?style=flat-square)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧪 Funcionalidades Principais
+
+| Dimensão | Descrição |
+|----------|-----------|
+| 🔍 **Busca Avançada** | Encontre qualquer personagem em todas as dimensões conhecidas |
+| 📖 **Detalhes dos Personagens** | Veja status, origem, episódios e versões alternativas |
+| 🌐 **Navegação Interdimensional** | Explore diferentes realidades com nossa paginação especial |
+| 💬 **Comentários Dimensonais** | Deixe sua mensagem em qualquer perfil de personagem |
+
+## 🛠️ Como Executar Localmente
+
+*"Vamos fazer como no episódio 304, Morty!"*
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/c-137-blog.git
