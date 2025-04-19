@@ -9,18 +9,13 @@
   }
   
   body {
-    font-family: 'Get Schwifty', 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS';
     background-color: var(--space-black);
     color: white;
     background-image: 
       radial-gradient(circle at 10% 20%, rgba(0, 255, 157, 0.1) 0%, transparent 20%),
       radial-gradient(circle at 90% 80%, rgba(0, 180, 255, 0.1) 0%, transparent 20%);
     min-height: 100vh;
-  }
-  
-  @font-face {
-    font-family: 'Get Schwifty';
-    src: url('https://fonts.cdnfonts.com/css/get-schwifty') format('woff');
   }
   
   /* Estilos para a Navbar */
