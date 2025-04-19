@@ -29,8 +29,12 @@
 
 ## 🛠️ Como Executar Localmente
 
-*"Vamos fazer como no episódio 304, Morty!"*
-
 1. Clone o repositório:
 ```bash
 git clone https://github.com/seu-usuario/c-137-blog.git
+```
+
+2. Entre na pasta do projeto:
+```bash
+cd c-137-blog
+```
